@@ -3,6 +3,7 @@ package com.safalifter.userservice;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import com.safalifter.userservice.enums.Role;
@@ -11,6 +12,7 @@ import com.safalifter.userservice.repository.UserRepository;
 
 @SpringBootApplication
 @EnableFeignClients
+@EnableDiscoveryClient
 public class UserServiceApplication implements CommandLineRunner {
     private final UserRepository userRepository;
 

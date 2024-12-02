@@ -26,7 +26,9 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/swagger-resources/**",
                                 "/swagger-ui/**",
-                                "/v3/api-docs/**"
+                                "/v3/api-docs/**",
+                                "/v1/user/save",
+                                "/v1/user/getUserByUsername/**"
                         ).permitAll() // Swagger endpoints accessible without authentication
                         .anyRequest().authenticated() // Other endpoints require authentication
                 )
