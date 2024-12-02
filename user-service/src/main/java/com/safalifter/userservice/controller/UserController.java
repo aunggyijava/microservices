@@ -5,6 +5,8 @@ import com.safalifter.userservice.dto.UserDto;
 import com.safalifter.userservice.request.RegisterRequest;
 import com.safalifter.userservice.request.UserUpdateRequest;
 import com.safalifter.userservice.service.UserService;
+
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +14,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController

@@ -12,3 +12,8 @@ spring:
       httpclient:
         connect-timeout: 60000
         response-timeout: 60s
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

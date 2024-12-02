@@ -1,9 +1,9 @@
 package com.safalifter.userservice.request;
 
 import com.safalifter.userservice.model.UserDetails;
-import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
 
 @Data
 public class UserUpdateRequest {
